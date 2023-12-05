@@ -1,4 +1,4 @@
-let inc = 0.01;
+let inc = 0.05;
 let scl = 20;
 let cols, rows;
 let zoff = 0;
@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(0, 0.1); // Add an alpha value to the background
+  background(0, 0.05); // Add an alpha value to the background
   let yoff = 0;
   for (let y = 0; y < rows; y++) {
     let xoff = 0;
@@ -25,7 +25,7 @@ function draw() {
       rotate(v.heading());
       stroke(noiseValue, 1, 1, 0.05); // Use noise value as hue and 0.5 as alpha
       strokeWeight(2);
-      line(0, 0, 300, 0);
+      line(0, 0, 30, 0);
       pop();
     }
     yoff += inc;

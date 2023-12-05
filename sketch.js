@@ -4,7 +4,7 @@ let cols, rows;
 let zoff = 0;
 
 function setup() {
-  createCanvas(1920, 1080);
+  createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 1, 1, 1, 1); // Use HSB color space with an alpha range
   cols = floor(width / scl);
   rows = floor(height / scl);
